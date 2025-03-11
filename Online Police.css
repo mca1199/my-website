@@ -1,0 +1,71 @@
+<html>
+    <head>
+            <Style>
+        .main {
+            border-color: brown;
+
+        }
+
+        .A {
+           
+            font-family: Times New Roman;
+            color: white;
+            font-size: 25px;
+            height: 70vh;
+            width: 100%;
+            background-size: cover;
+            background-image: url(police.webp);
+                       
+            
+        }
+        .A>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
+            overflow: hidden;
+            /* background-color: brown; */
+            margin-top: 60px;
+            border-radius: 20px;
+            float: right;
+        }
+        .A>Ul>li {
+            float: left;
+        }
+        .A>ul>li>a {
+            display: block;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        li>.active {
+            background-color: gray;
+            color: white;
+        }
+        li>a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+
+
+        body {
+            background-color: skyblue;
+
+        }
+
+        hr {
+            color: blue;
+        }
+
+        .footer {
+
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            color: blue;
+        }
+    </Style>
+    </head>
+</html>

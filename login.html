@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #login-form {
+            display: none;
+
+        }
+
+        body{
+            background-image: url(B1.jpg);
+            background-size: cover;
+        }
+
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 2% auto;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            overflow: hidden;                                                               
+        }
+
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #ff61241f;
+            border-radius: 30px;
+        }
+
+        .toggle-btn {
+            width: 100px;
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            position: relative;
+            border: 0;
+            outline: none;
+            align-items: center;
+        }
+       
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 110px;
+            background: #f3C693;
+            border-radius: 30px;
+            transition: 0.5s;
+
+        }
+
+        .input-group-login {
+            top: 150px;
+            position: absolute;
+            width: 280px;
+            transition: 0.5s;
+        }
+
+        .input-group-Registration {
+            top: 120px;
+            position: absolute;
+            width: 280px;
+            transition: 0.5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid#999;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .input-field1 {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-bottom: 1px solid#999;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: #f3c693;
+            border: 0;outline: none;
+            border-radius: 30px;
+        }
+
+        .cancel-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: #f3c693;
+            border-radius: 30px;
+        }
+
+        .check-box {
+            margin: 30px 10px 34px 0;
+        }
+
+        /* .span {
+            color: #777;
+            font-size: 12px;
+            bottom: 68px;
+            position: absolute;
+        } */
+
+        #login {
+            left: 50px;
+        }
+
+        #login input {
+            color: white;
+            font-size: 15px;
+        }
+
+        #Registration {
+            left: 450px;
+
+        }
+
+        #Registration Input {
+            color: white;
+            font-size: 15px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-bottom: 1px solid#999;
+            outline: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id class="login-form" class="login-page">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick='login()'class="toggle-btn">Login</button>
+                <button type="button" onclick='Registration()'class="toggle-btn">Registration</button>
+            </div>
+            <form id="login" class="input-group-login">
+                <label>Username : </label><br>
+                <input type="text" class="input-field" placeholder="Enter Username" name="username" required> <br>
+                <label>Password : </label><br>
+                <input type="password" class="input-field" placeholder="Enter Password" name="password" required><br>
+                <input type="checkbox" class="check-box" checked="checked"> Remember me
+
+                <a href="After Login.html"><input type="button" class="submit-btn" value="Login"></a>
+                <a href=""><input type="button" class="cancel-btn" value="Cancle"></a><br>
+                Forgot <a href="#"> password? </a>
+            </form>
+            <form id="Registration" class="input-group-Registration">
+                <label> First Name : </label> <br>
+                <input type="text" class="input-field" placeholder=" First Name" name="First Name" required><br>
+                <label> Last Name : </label> <br>
+                <input type="text" class="input-field" placeholder=" Last Name" name="Last Name" required> <br>
+                <label> E-mail ID : </label><br>
+                <input type="text" class="input-field" placeholder=" E-mail ID" name="E-mail" required><br>
+                <label>Password : </label> <br>
+                <input type="password" class="input-field" placeholder=" Password" name="password" required><br>
+                <label>RePassword : </label><br>
+                <input type="password" class="input-field" placeholder=" RePassword" name="password" required> <br>
+
+                <label> Date Of Birth : </label><br>
+                <input type="Date" class="input-field" placeholder=" Date of Birth" name="D.O.B" required><br>
+                <label> Mobile No : </label><br>
+                <input type="number" class="input-field" placeholder="+91" name="Mob number" required><br>
+                <label> Gender : </label>
+                <input type="radio" name="male" /> Male
+                <input type="radio" name="female" />Female
+                <input type="radio" name="Other" />Other
+                <br>
+                <!-- <label> City : </label> -->
+                <!-- <input type="text">  -->
+                <select> <br>
+                    <option value="City">City</option>
+                    <option value="patna">Patna</option>
+                    <option value="Bihar">Bihar Sharif</option>
+                    <option value="Jahanabad">Jahanabad</option>
+                    <option value="chapra">Chapra</option>
+                    <option value="Begusraye">Begusraye</option>
+                    <option value="Purniya">Purniya</option>
+                </select>
+
+                <br>
+
+                <input type="checkbox" class="check-box" checked="checked"> Remember me
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" class="cancel-btn"> Cancel</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
